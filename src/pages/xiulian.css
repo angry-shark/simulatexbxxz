@@ -1,0 +1,123 @@
+.xiulian{
+    width: 100%;
+    height: 78%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(247, 219, 183);
+}
+
+.levelUp{
+    width: 100%;
+}
+
+.other{
+    width: 100%;
+    height: 85%;
+}
+
+.xiulianInfo{
+    width: 100%;
+    height: 25px;
+    padding: 5px 0; 
+    padding-top: 10px;
+    margin:10px 0;
+    background-color: rgb(124, 124, 209);
+}
+
+.xiulianInfo>span{
+    float: right;
+}
+
+.xiulianSystem{
+    height: 100%;
+}
+
+.main{
+    height: 50%;
+    background-color: rgb(223, 222, 158);
+    margin: 0 1%;
+    text-align: center;
+}
+
+.main>div{
+    width: 40%;
+    text-align: center;
+}
+
+.main>div>img{
+    border-radius: 0;
+    width: 80%;
+    margin: 10%;
+}
+
+.xiulianProcessInf{
+    height: 40%;
+    background-color: rgb(219, 197, 179);
+    margin: 0 1%;
+}
+
+.showProcess{
+    font-size: 14px;
+}
+
+.bar{
+    width: 80%;
+    background-color: rgb(8, 8, 8);
+    height: 20px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.subBar{
+    width: 100%;
+    background-color: beige;
+    height: 100%;
+}
+
+table{
+    width: 98%;
+    margin: 0 1%;
+    border: 1px solid black;
+}
+
+td{
+    width: 20%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+@keyframes myfirst
+{
+0%   {width: 100%;}
+25%  {width: 75%;}
+50%  {width: 50%;}
+75%  {width: 25%;}
+100% {width: 0%;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {width: 100%;}
+25%  {width: 75%;}
+50%  {width: 50%;}
+75%  {width: 25%;}
+100% {width: 0%;}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+0%   {width: 100%;}
+25%  {width: 75%;}
+50%  {width: 50%;}
+75%  {width: 25%;}
+100% {width: 0%;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0%   {width: 100%;}
+25%  {width: 75%;}
+50%  {width: 50%;}
+75%  {width: 25%;}
+100% {width: 0%;}
+}

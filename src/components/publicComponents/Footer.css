@@ -1,0 +1,20 @@
+.Footer{
+    margin: auto;
+    width: 98%;
+    height: 50px;
+    background-color: rgb(184, 137, 77);
+    font-size: 14px;
+    margin-top: 5%;
+}
+
+table{
+    height: 100%;
+    border: 0px white;
+}
+
+tr td{
+    height: 100%;
+    border: 0px;
+    width: 18%;
+    margin: 0 1%;
+}
