@@ -1,0 +1,15 @@
+.linggeng{
+    width: 100%;
+    height: 78%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(247, 219, 183);
+}
+
+.linggengInfo{
+    height: 160px;
+}
+
+.linggengInfContainer{
+    height: 100%;
+}
