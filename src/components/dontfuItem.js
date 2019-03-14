@@ -6,7 +6,7 @@ class dontfuItem extends Component {
         return (
             <tr>
                 <td>
-                    <img src={logo} alt="" style={{width:"45%"}}/>
+                    <img src={logo} alt="" style={{width:"45%",marginLeft:"25%"}}/>
                 </td>
                 <td>
                     <div>

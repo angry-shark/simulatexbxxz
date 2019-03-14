@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import grassUrl from "../img/jiuling00.png";
-import logo from '../img/logo.png';
 import DongfuItem from "../components/dontfuItem";
 
 
@@ -12,7 +10,21 @@ class dongfuMainModule extends Component {
 
         return (
             <div className="DongfuInfoShow">
+                <div style={{textAlign:"center",margin:"10px 2%"}}>
+                    当前仆役:10
+                    <span style={{float:"right",marginRight:"5%"}}>
+                        <button>招募仆役</button>
+                    </span>
+                </div>
                 <table>
+                    <thead>
+                        <tr>
+                            <th>资源种类</th>
+                            <th>资源信息</th>
+                            <th>仆役配置</th>
+                            <th></th>
+                        </tr>
+                    </thead>
                     <tbody>
                         {items.map((item,i) => {
                             return  <DongfuItem key={i}/>

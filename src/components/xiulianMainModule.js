@@ -76,7 +76,7 @@ class xiulianMainModule extends Component {
                                 </div>
                             </div>    
                         </div>
-                        <ProcessInf/>
+                        <ProcessInf height={180}/>
                     </div>
             </div>
         );

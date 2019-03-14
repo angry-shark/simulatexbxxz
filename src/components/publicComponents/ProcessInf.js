@@ -13,7 +13,7 @@ class ProcessInf extends Component {
         const StyleObj = {
             height: diyHeight + "px",
             backgroundColor: "rgb(219, 197, 179)",
-            margin: "0 0"
+            margin: "0 2%"
         }
         return (
             <div className="xiulianProcessInf" style={StyleObj}>

@@ -9,7 +9,7 @@ class levelCompoent extends Component {
         }
 
         return (
-            <div className="levelUp">
+            <div className="levelUp" style={{marginTop:"5%"}}>
                     <table>
                         <thead>
                             <tr>

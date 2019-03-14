@@ -7,12 +7,31 @@ import Linggeng from "./pages/linggeng";
 import Dongfu from "./pages/dongfu";
 
 class App extends Component {
+
+  constructor(){
+    super();
+    this.pageSet = [<Xiulian/>,<Linggeng/>,<Dongfu/>];
+    this.state = {
+      CurrentComponent : this.pageSet[0]
+    }
+    
+  }
+
+  handleSwitchPage(currentPageNum){
+    console.log(currentPageNum);
+    this.setState({
+      CurrentComponent:this.pageSet[currentPageNum]
+    })
+  }
+
   render() {
+
+
     return (
       <div className="App">
         <Header />
-        <Dongfu />
-        <Footer />
+        {this.state.CurrentComponent}
+        <Footer onSwitch={this.handleSwitchPage.bind(this)}/>
       </div>
     );
   }
