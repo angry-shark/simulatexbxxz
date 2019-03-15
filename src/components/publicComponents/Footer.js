@@ -26,13 +26,14 @@ class Footer extends Component {
                                 </a>
                             </td>
                             <td>
-                                <a href="#3">
-                                    门派
+                                <a href="#3"
+                                onClick={this.handleSwichPageRequestToApp.bind(this,2)}>
+                                    功法
                                 </a>
                             </td>
                             <td>
                                 <a href="#4"
-                                onClick={this.handleSwichPageRequestToApp.bind(this,2)}>
+                                onClick={this.handleSwichPageRequestToApp.bind(this,3)}>
                                     洞府
                                 </a>
                             </td>
