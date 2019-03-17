@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Item from "../components/lenggengItem";
+import Item from "./lenggengItem";
 
 class linggengInfo extends Component {
     render() {

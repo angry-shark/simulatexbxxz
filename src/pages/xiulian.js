@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./xiulian.css";
-import LevelUp from "../components/levelCompoent";
-import MainModule from "../components/xiulianMainModule";
+import LevelUp from "../components/xiulianComponents/levelCompoent";
+import MainModule from "../components/xiulianComponents/xiulianMainModule";
 
 
 class xiulian extends Component {

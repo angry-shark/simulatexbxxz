@@ -11,9 +11,16 @@ class gongfaList extends Component {
             height = 224;
         }
         
+        let ListStyle = {
+            margin:"0",
+            padding:"0",
+            height:height+"px",
+            overflow:"auto"
+        }
+
         return (
             <div className="gongfaList">
-                    <ul style={{margin:"0",padding:"0",height:height+"px",overflow:"auto"}}>
+                    <ul style={ListStyle}>
                         <GongfaItem/>
                         <GongfaItem/>
                         <GongfaItem/>
@@ -75,7 +82,7 @@ class gongfaList extends Component {
                         <GongfaItem/>
                         <GongfaItem/>
                     </ul>
-                    <GongfaNav isdisplay={1}/>
+                    <GongfaNav isdisplay={this.props.navdisplay}/>
                 </div>
         );
     }

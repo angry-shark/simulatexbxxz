@@ -3,17 +3,25 @@ import React, { Component } from 'react';
 class ProcessInf extends Component {
     render() {
         let diyHeight = this.props.height;
+        let _display = this.props.isdisplay;
+        let _isdisplay = "block"
         if(diyHeight > 0){
             diyHeight *= 1;
         }else{
             diyHeight = 200
         }
+        if(_display === 1){
+            _isdisplay = "block";
+        }else{
+            _isdisplay = "none";
+        }
 
 
-        const StyleObj = {
+        let StyleObj = {
             height: diyHeight + "px",
             backgroundColor: "rgb(219, 197, 179)",
-            margin: "0 2%"
+            margin: "0 2%",
+            display: _isdisplay
         }
         return (
             <div className="xiulianProcessInf" style={StyleObj}>

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import JulingUrl from "../img/jiuling00.png";
-import ProcessInf from "../components/publicComponents/ProcessInf";
+import hero from "../../img/logo00.png";
+import ProcessInf from "../publicComponents/ProcessInf";
 
-class linggengMainModule extends Component {
+
+class xiulianMainModule extends Component {
     constructor(){
         super();
         this.timer = null;
@@ -55,35 +56,31 @@ class linggengMainModule extends Component {
         return (
             <div className="other">
                     <div className="xiulianInfo">
-                        <span style={{width:"70%",textAlign:"center"}}>
-                        草:500/1000 木:20/500  铁:120/800
-                        </span>
-                        <span style={{width:"18%"}}>
-                            <button>升级</button>
-                        </span>
+                        <span style={{width:"70%",textAlign:"center"}}>飞剑传书</span>
+                        <span style={{width:"18%"}}>总修为 : {this.state.totalExp}</span>
                     </div>
-                    <div className="xiulianSystem" style={{height:"30%"}}>
+                    <div className="xiulianSystem">
                         <div className="main">
                             <div>
-                                <img src={JulingUrl} alt="hero" style={{display:"inline",marginBottom:"5px"}}/>
+                                <img src={hero} alt="hero" style={{display:"inline"}}/>
                                 <div className="showProcess">
                                     当前修炼效率:(1~5)/5秒
                                     <br/>
-                                    <div className="bar" style={{marginTop:"5px"}}>
+                                    <div className="bar">
                                         <div className="subBar" 
                                         style={this.state.divStyle} 
                                         ref={(node)=>{this.subBar = node}}>
                                         </div>
                                     </div> 
-                                    <p className="clockCount" style={{marginTop:"0"}}>00:0{this.state.time}</p>
+                                    <p className="clockCount">00:0{this.state.time}</p>
                                 </div>
                             </div>    
                         </div>
-                        <ProcessInf height={150}/>
+                        <ProcessInf height={180} isdisplay={1}/>
                     </div>
             </div>
         );
     }
 }
 
-export default linggengMainModule;
+export default xiulianMainModule;

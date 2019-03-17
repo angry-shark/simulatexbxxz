@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DongfuItem from "../components/dontfuItem";
+import DongfuItem from "./dontfuItem";
 
 
 class dongfuMainModule extends Component {

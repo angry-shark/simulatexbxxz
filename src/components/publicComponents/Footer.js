@@ -38,7 +38,8 @@ class Footer extends Component {
                                 </a>
                             </td>
                             <td>
-                                <a href="#5">
+                                <a href="#5"
+                                onClick={this.handleSwichPageRequestToApp.bind(this,4)}>
                                     仙缘
                                 </a>
                             </td>

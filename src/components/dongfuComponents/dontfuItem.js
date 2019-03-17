@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../img/logo.png';
+import logo from '../../img/logo.png';
+import "./dongfuItem.css"
 
 class dontfuItem extends Component {
     render() {
@@ -17,13 +18,13 @@ class dontfuItem extends Component {
                 </td>
                 <td>
                     <div>
-                        <span><button>-</button></span>
+                        <span><button style={{width:"20%"}}>-</button></span>
                         <span>5/10</span>
-                        <span><button>+</button></span>
+                        <span><button style={{width:"20%"}}>+</button></span>
                     </div>
                 </td>
                 <td>
-                    <button>升级</button>
+                    <button style={{width:"80%"}}>升级</button>
                 </td>
             </tr>
         );

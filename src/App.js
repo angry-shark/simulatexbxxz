@@ -6,12 +6,13 @@ import Xiulian from "./pages/xiulian";
 import Linggeng from "./pages/linggeng";
 import Dongfu from "./pages/dongfu";
 import Gongfa from "./pages/gongfa";
+import Xianyuan from "./pages/xianyuan";
 
 class App extends Component {
 
   constructor(){
     super();
-    this.pageSet = [<Xiulian/>,<Linggeng/>,<Gongfa/>,<Dongfu/>];
+    this.pageSet = [<Xiulian/>,<Linggeng/>,<Gongfa/>,<Dongfu/>,<Xianyuan/>];
     this.state = {
       CurrentComponent : this.pageSet[0]
     }

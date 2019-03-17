@@ -12,8 +12,13 @@ class gongfaNav extends Component {
             _display = "block";
         }
 
+        let BtnsStyle = {
+            width:"100%",
+            display:_display
+        }
+
         return (
-            <div style={{width:"100%",display:_display}}>
+            <div style={BtnsStyle}>
                 <table style={{width:"98%"}}>
                     <tbody>
                         <tr style={{width:"100%"}}>

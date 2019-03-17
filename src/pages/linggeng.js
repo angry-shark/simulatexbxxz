@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import LinggengInfo from "../components/linggengInfo";
-import LinggengMainModule from "../components/linggengMainModule";
+import LinggengInfo from "../components/linggengComponents/linggengInfo";
+import LinggengMainModule from "../components/linggengComponents/linggengMainModule";
 
 class linggeng extends Component {
     render() {

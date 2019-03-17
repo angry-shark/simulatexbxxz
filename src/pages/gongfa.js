@@ -1,22 +1,32 @@
 import React, { Component } from 'react';
-import GongfaList from "../components/gongfaList";
+import GongfaList from "../components/gongfaComponents/gongfaList";
 import ProcessInf from "../components/publicComponents/ProcessInf";
+import MengPai from "../components/gongfaComponents/mengpaiModule";
 
 class gongfa extends Component {
     constructor(){
         super();
-        this.height = 224;
-        this.navdisplay = 0;
+        this.state = {
+            height : 224,
+            navdisplay : 0,
+            Infhidden:1
+        }
     }
 
 
     handleSpanList(){
-        if(this.height === 224){
-            this.height = 580;
-            this.navdisplay = 1;
+        if(this.state.navdisplay === 0){
+            this.setState({
+                height: 550,
+                navdisplay :1,
+                Infhidden: 0
+            })
         }else{
-            this.height = 0;
-            this.navdisplay = 0;
+            this.setState({
+                height: 0,
+                navdisplay :0,
+                Infhidden:1
+            })
         }
     }
 
@@ -27,10 +37,12 @@ class gongfa extends Component {
                 <div style={{textAlign:"center",margin:"10px 2%"}}>
                     技能点: 33/33
                     <span style={{float:"right",marginRight:"5%"}}>
-                        <button>功法详细</button>
+                        <button onClick={this.handleSpanList.bind(this)}>功法详细</button>
                     </span>
                 </div>
-                <GongfaList height={555} navdisplay={this.navdisplay}/>
+                <GongfaList height={this.state.height} navdisplay={this.state.navdisplay}/>
+                <MengPai isdisplay={this.state.Infhidden}/>
+                <ProcessInf isdisplay={this.state.Infhidden}/>
             </div>
         );
     }
