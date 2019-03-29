@@ -11,7 +11,13 @@ class xianyuan extends Component {
                             <td><button>新造关</button></td>
                             <td><button>南村城</button></td>
                         </tr>
+                        <tr>
+                            <td><button>底肥山</button></td>
+                            <td><button>新造关</button></td>
+                            <td><button>南村城</button></td>
+                        </tr>
                     </tbody>
+
                 </table>
             </div>
         );
